@@ -1,7 +1,7 @@
 {
   "name": "the-pokedex-app",
   "version": "0.1.0",
-  "homepage": "https://github.com/Matheus-Rodrigues-Araujo.github.io/pokedex",
+  "homepage": "https://github.com/matheus-rodrigues-araujo.github.io/pokedex",
   "private": true,
   "dependencies": {
     "axios": "^0.27.2",
@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
