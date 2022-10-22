@@ -1,0 +1,27 @@
+.search-options{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 2em;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+}
+
+.search-options button{
+  cursor: pointer;
+  border: none;
+  border-radius: .3em;
+  background-color: var(--dark-color);
+  /* color: var(--bg-color); */
+  color: white;
+  padding: .5em;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.search-options button:hover{
+  background-color: var(--pink);
+  color: #ffff;
+}

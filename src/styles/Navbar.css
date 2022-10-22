@@ -1,0 +1,106 @@
+header {
+  position: relative;
+}
+
+.navbar {
+  background-color: var(--pink);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 2px 2px 2px 2px rgb(154, 9, 81);
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navbar-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+.navbar-list-item {
+  list-style: none;
+  display: inline;
+}
+
+.navbar-list-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Toggle Icon */
+.toggle {
+  display: none;
+  margin: auto 0;
+  position: relative;
+  width: 27px;
+  height: 100%;
+  /* display: flex; */
+  flex-flow: column wrap;
+  gap: 0.25em;
+  cursor: pointer;
+}
+
+.toggle div {
+  /* position: absolute; */
+  width: 100%;
+  height: 5px;
+  background-color: aliceblue;
+  border: 0;
+  border-radius: 1em;
+}
+
+.toggle-active {
+  display: flex;
+}
+/* .toggle-active{
+  display: flex;
+} */
+
+/* Style for the toggle active*/
+.active {
+  margin: auto 0;
+  position: relative;
+  width: 27px;
+  height: 100%;
+  display: none;
+  flex-flow: column wrap;
+  gap: 0.25em;
+  cursor: pointer;
+}
+
+.active div {
+  position: absolute;
+}
+
+.active div:first-child {
+  transform: rotate(50deg);
+}
+
+.active div:nth-child(2) {
+  display: none;
+}
+
+.active div:last-child {
+  transform: rotate(-50deg);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 728px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .toggle {
+    display: flex;
+  }
+}

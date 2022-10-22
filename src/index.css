@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@900&family=Roboto:wght@100&display=swap');
+
+
+:root {
+  --bg-color: #ff2121;
+  /* --bg-color: rgb(42, 0, 139); */
+  --green: rgb(34, 219, 9);
+  --dark-color: rgb(26, 24, 24);
+  --gray: rgba(17, 15, 15, 0.637);
+  --pink: rgb(255, 2, 99);
+  --dark-pink: rgb(201, 4, 53);
+  --yellow: rgb(238, 238, 5);
+  --display: flex;
+  --navAnimation: navigationAnimation
+
+  /*  Pokemon Types */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* background-color: var(--bg-color); */
+  /* background-color: crimson; */
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+
+  /* width: 100%; */
+  /* position: relative; */
+}
+
+
+@keyframes navigationAnimation{
+  from{
+    width: 0vw;
+  }
+
+  to{
+    width: 25vw;
+  }
+}
+
+@keyframes closeSidebar{
+  0%{
+    width: 25vw;
+  }
+
+  50%{
+    width:0vw;
+  }
+  100%{
+    display: none;
+  }
+}
+
+@keyframes pokeballAnimation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+

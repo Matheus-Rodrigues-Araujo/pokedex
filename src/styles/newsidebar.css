@@ -1,0 +1,12 @@
+.newsidebar{
+  position: absolute;
+  height: 20vh;
+  width: 20vw;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: var(--dark-color);
+  top: 76px;
+  right: 0;
+  z-index: 1;
+}

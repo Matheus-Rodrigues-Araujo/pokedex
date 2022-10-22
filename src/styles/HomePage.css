@@ -1,0 +1,43 @@
+.home-page {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em;
+}
+
+.home-page img {
+  flex: 1;
+}
+
+.greeting {
+  margin-top: 2em;
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  align-items: center;
+  /* margin-left: 5em; */
+  gap: 0.7em;
+}
+
+.greeting h3 {
+  font-size: 4rem;
+}
+
+.greeting p {
+  color: var(--gray);
+  font-size: 1.2rem;
+}
+
+.greeting a {
+  border-radius: 1em;
+  text-decoration: none;
+  width: 50%;
+  color: white;
+  background-color: var(--pink);
+  font-size: 1.8rem;
+  transform: 0.4s ease-in-out;
+}
+
+.greeting a:hover {
+  background-color: var(--green);
+}

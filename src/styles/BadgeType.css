@@ -1,0 +1,21 @@
+.badge-type {
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.badge-type .badge {
+  border: 0;
+  border-radius: 0.3em;
+  color: white;
+  outline: 3px rgb(255, 247, 247) outset;
+  padding: 0 10px;
+  transition: 0.4s;
+  font-size: 1.2rem;
+}
+.badge-type .badge:hover {
+  background-color: black;
+}

@@ -1,0 +1,39 @@
+.pokemon-card {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  list-style: none;
+  width: 280px;
+  height: 300px;
+  cursor: pointer;
+  border: 6.5px outset white;
+  border-radius: 1em;
+  /* transition: .4s ease-in-out; */
+}
+
+.pokemon-card:hover {
+  background-color: aquamarine;
+  border-color: var(--pink);
+}
+
+.pokemon-card h3 {
+  transition: 0.4s ease-in-out;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pokemon-card:hover h3 {
+  font-size: 1.5rem;
+}
+
+.pokemon-card a{
+  position: absolute;
+  bottom: 40px;
+}
+
+.pokemon-card a img{
+  width: 13rem;
+  height: 13rem;
+}
