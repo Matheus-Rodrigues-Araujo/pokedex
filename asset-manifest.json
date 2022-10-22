@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Matheus-Rodrigues-Araujo.github.io/pokedex/static/css/main.1bfe37a6.css",
-    "main.js": "/Matheus-Rodrigues-Araujo.github.io/pokedex/static/js/main.8dcdeff9.js",
+    "main.js": "/Matheus-Rodrigues-Araujo.github.io/pokedex/static/js/main.7396c111.js",
     "index.html": "/Matheus-Rodrigues-Araujo.github.io/pokedex/index.html",
     "main.1bfe37a6.css.map": "/Matheus-Rodrigues-Araujo.github.io/pokedex/static/css/main.1bfe37a6.css.map",
-    "main.8dcdeff9.js.map": "/Matheus-Rodrigues-Araujo.github.io/pokedex/static/js/main.8dcdeff9.js.map"
+    "main.7396c111.js.map": "/Matheus-Rodrigues-Araujo.github.io/pokedex/static/js/main.7396c111.js.map"
   },
   "entrypoints": [
     "static/css/main.1bfe37a6.css",
-    "static/js/main.8dcdeff9.js"
+    "static/js/main.7396c111.js"
   ]
 }
