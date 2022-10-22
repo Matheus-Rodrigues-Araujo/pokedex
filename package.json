@@ -1,7 +1,7 @@
 {
-  "name": "the-pokedex-app",
+  "name": "pokedex",
   "version": "0.1.0",
-  "homepage": "https://github.com/matheus-rodrigues-araujo.github.io/pokedex",
+  "homepage": "pokedex/",
   "private": true,
   "dependencies": {
     "axios": "^0.27.2",
@@ -36,8 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
