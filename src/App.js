@@ -65,8 +65,8 @@ function App() {
       name: 'Home'
     },
     {
-      path: '/pokedex-page',
-      name: 'Pokedex'
+      path: '/pokemons',
+      name: 'Pokemons'
     },
     {
       path: '/about',
@@ -143,22 +143,19 @@ function App() {
   return (
     <ThemeContext.Provider value={pokemonThemes}>
       <div className="main">
-        {/* <Header handleInput={pokemonFilter} />
-        <NavigationList routes={links} /> */}
         <NavigationList routes={links} />
         
         <Routes>
           <Route path='/' element={<HomePage />}> </Route>
-          <Route path="#/pokedex-page" element={
+          <Route path="/pokemons" element={
             <>
               <Header handleInput={pokemonFilter} />
-              {/* <NavigationList routes={links} /> */}
               <PokedexPage />
             </>
 
           } />
-          <Route path="#/pokedex-page/:id" element={<PokemonPage />}></Route>
-          <Route path="*" element={<h1>Page doesn't exist</h1>} />
+          <Route path="/pokemons/:id" element={<PokemonPage />}></Route>
+          <Route path="*" element={<h1>Page doesn't exist yet, comeback later!</h1>} />
         </Routes>
 
         <Footer />

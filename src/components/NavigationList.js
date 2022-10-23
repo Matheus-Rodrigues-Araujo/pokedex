@@ -7,25 +7,18 @@ export default function NavigationList({routes}) {
   
   useEffect(()=>{
     window.addEventListener('resize', ()=> setWidth(window.innerWidth))
-
-
+    
     return (
       () => {window.removeEventListener('resize', setWidth(window.innerWidth))}
     )
   }, [width])
   
-
-  
   return (
     <nav className="navigation">
-
     
-    <a className="logo" href="pokedex/">Pokedex App</a>
+    <a className="logo" href="/">Pokedex App</a>
   
-    <div className="toggle-icon"
-    onClick={() => toggle ? setToggle(false) : setToggle(true)}
-    >
-    
+    <div className="toggle-icon" onClick={() => toggle ? setToggle(false) : setToggle(true)}>
       <div></div>
       <div></div>
       <div></div>
@@ -33,19 +26,16 @@ export default function NavigationList({routes}) {
 
     {
       width >=680 ?
-      <ul 
-      >
+      <ul>
         {routes.map(route => (
           <li key={route.name}>
             <a href={route.path}> {route.name} </a>
           </li>
         ))}
       </ul>
-
       :
       <NewSideBar toggle={toggle ? 'flex' : 'none'} 
       routes={routes}/>
-
     }
     </nav>
   )

@@ -23,13 +23,13 @@ import App from './App'
 
 // React-Router
 // import { HashRouter } from 'react-router-dom'
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter} from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode >
-    <HashRouter basename='pokedex/'>
+    <BrowserRouter basename='/pokedex' >
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 )

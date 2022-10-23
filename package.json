@@ -1,7 +1,7 @@
 {
   "name": "pokedex",
   "version": "0.1.0",
-  "homepage": "https://matheus-rodrigues-araujo.github.io/pokedex/",
+  "homepage": "https://matheus-rodrigues-araujo.github.io/pokedex",
   "private": true,
   "dependencies": {
     "axios": "^0.27.2",
