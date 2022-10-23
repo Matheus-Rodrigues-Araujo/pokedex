@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function NewSideBar({routes, toggle}){
   return (
     <ul className="newsidebar" style={
@@ -5,7 +7,7 @@ export default function NewSideBar({routes, toggle}){
       }>
       {routes.map(route => (
           <li key={route.name}>
-            <a href={route.path}> {route.name} </a>
+            <Link to={route.path}> {route.name} </Link>
           </li>
         ))
       }

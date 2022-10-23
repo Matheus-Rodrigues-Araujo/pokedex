@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { HashRouter } from 'react-router-dom'
 
 import HomePage from './components/HomePage'
 import Header from './components/Header'
@@ -54,6 +55,8 @@ const pokemonThemes = {
   steel: 'rgba(223, 217, 217, 0.699)'
 }
 
+
+
 function App() {
   const [items, setItems] = useState([])
   const [limit, setLimit] = useState(12)
@@ -61,7 +64,7 @@ function App() {
 
   const links = [
     {
-      path: '/',
+      path: '/#',
       name: 'Home'
     },
     {
@@ -141,26 +144,25 @@ function App() {
   }
 
   return (
-    <ThemeContext.Provider value={pokemonThemes}>
-      <div className="main">
-        <NavigationList routes={links} />
-        
-        <Routes>
-          <Route path='/' element={<HomePage />}> </Route>
-          <Route path="/pokemons" element={
-            <>
+    <HashRouter>
+      <ThemeContext.Provider value={pokemonThemes}>
+        <div className="main">
+          <NavigationList routes={links} />
+          
+          <Routes>
+            <Route path='/' element={<HomePage />}> </Route>
+            <Route path="/pokemons" element={<>
               <Header handleInput={pokemonFilter} />
               <PokedexPage />
-            </>
+             </>} />
+            <Route path="/pokemons/:id" element={<PokemonPage />}></Route>
+            <Route path="*" element={<h1>Page doesn't exist yet, comeback later!</h1>} />
+          </Routes>
 
-          } />
-          <Route path="/pokemons/:id" element={<PokemonPage />}></Route>
-          <Route path="*" element={<h1>Page doesn't exist yet, comeback later!</h1>} />
-        </Routes>
-
-        <Footer />
-      </div>
-    </ThemeContext.Provider>
+          <Footer />
+        </div>
+      </ThemeContext.Provider>
+    </HashRouter>
   )
 }
 

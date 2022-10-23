@@ -35,7 +35,7 @@ export default function PokemonCard(props) {
       </h3>
 
       <Link
-        to={`/pokedex/${item.id}`}
+        to={`/pokemons/${item.id}`}
         // target={'_blank'}
         title={`See more of ${
           item.name.slice(0, 1).toUpperCase() +

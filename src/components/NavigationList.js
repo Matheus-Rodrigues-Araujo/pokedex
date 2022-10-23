@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import NewSideBar from "./NewSidebar"
 
 export default function NavigationList({routes}) {
@@ -16,7 +17,7 @@ export default function NavigationList({routes}) {
   return (
     <nav className="navigation">
     
-    <a className="logo" href="/">Pokedex App</a>
+    <Link className="logo" to="/#">Pokedex App</Link>
   
     <div className="toggle-icon" onClick={() => toggle ? setToggle(false) : setToggle(true)}>
       <div></div>
@@ -29,7 +30,8 @@ export default function NavigationList({routes}) {
       <ul>
         {routes.map(route => (
           <li key={route.name}>
-            <a href={route.path}> {route.name} </a>
+            {/* <a href={route.path}> {route.name} </a> */}
+            <Link to={route.path} >{route.name}</Link>
           </li>
         ))}
       </ul>
