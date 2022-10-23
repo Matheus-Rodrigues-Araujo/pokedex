@@ -31,7 +31,7 @@
   font-weight: 700;
 }
 
-@media screen and (min-width: 729px) {
+@media screen and (max-width: 728px) {
   .sidebar-list {
     opacity: 0;
     display: none;

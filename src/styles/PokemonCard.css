@@ -37,3 +37,25 @@
   width: 13rem;
   height: 13rem;
 }
+
+@media screen and (max-width: 1200px) {
+  .pokemon-card {
+    width: 230px;
+    height: 280px;
+  }
+}
+
+
+@media screen and (max-width: 708px) {
+  .pokemon-card {
+
+    width: 200px;
+    height: 200px;
+    /* transition: .4s ease-in-out; */
+  }
+
+  .pokemon-card a img{
+    width: 8rem;
+    height: 8rem;
+  }
+}

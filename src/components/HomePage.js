@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom"
-
 const HomePage = () => {
   return (
     <div className="home-page">
@@ -11,7 +9,8 @@ const HomePage = () => {
       <div className="greeting">
         <h3>Welcome!</h3>
         <p>Click below to check out all your favorite Pokemons!</p>
-        <Link to="/pokemons">Explore</Link>
+        {/* <a href="https://matheus-rodrigues-araujo.github.io/pokedex/#/pokemons">Explore</a> */}
+        <a href="#/pokemons">Explore</a>
       </div>
 
     </div>

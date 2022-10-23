@@ -1,12 +1,17 @@
 .newsidebar{
   position: absolute;
   height: 20vh;
-  width: 20vw;
+  width: 28vw;
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
   background-color: var(--dark-color);
-  top: 76px;
-  right: 0;
+  top: 72px;
+  right: 10px;
   z-index: 1;
+}
+
+@media screen and (max-width:524px) {
+  .newsidebar{
+    width: 35vw;
+  }
 }

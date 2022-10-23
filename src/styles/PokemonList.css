@@ -25,25 +25,27 @@
   margin: 0em 6em;
 }
 
-.load-content{
+.load-content {
   margin-top: 1em;
   background-color: var(--bg-color);
   font-size: 1.8rem;
   color: white;
   cursor: pointer;
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
   padding: 8px;
   border: none;
   border-radius: 1em;
   font-weight: 700;
 }
 
-.load-content:hover{
+.load-content:hover {
   background-color: var(--green);
 }
-
-@media screen and (max-width:728px) {
+ 
+@media screen and (max-width: 710px) {
   .pokemon-list {
-    justify-content: center;
+    
+    gap: 0em;
+   
   }
 }

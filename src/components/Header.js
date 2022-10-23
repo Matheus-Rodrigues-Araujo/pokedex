@@ -10,12 +10,12 @@ export default function Header({ handleInput }) {
           autoFocus="on"
           onChange={e => handleInput(e.target.value)}
         ></input>
-        <button
+        {/* <button
           className="submit-btn"
           //  onClick={search}
         >
           OK
-        </button>
+        </button> */}
       </div>
     </header>
   )
