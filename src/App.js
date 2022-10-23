@@ -65,7 +65,7 @@ function App() {
       name: 'Home'
     },
     {
-      path: '/pokedex',
+      path: '/pokedex-page',
       name: 'Pokedex'
     },
     {
@@ -149,7 +149,7 @@ function App() {
         
         <Routes>
           <Route path='/' element={<HomePage />}> </Route>
-          <Route path="/pokedex" element={
+          <Route path="#/pokedex-page" element={
             <>
               <Header handleInput={pokemonFilter} />
               {/* <NavigationList routes={links} /> */}
@@ -157,7 +157,7 @@ function App() {
             </>
 
           } />
-          <Route path="/pokedex/:id" element={<PokemonPage />}></Route>
+          <Route path="#/pokedex-page/:id" element={<PokemonPage />}></Route>
           <Route path="*" element={<h1>Page doesn't exist</h1>} />
         </Routes>
 

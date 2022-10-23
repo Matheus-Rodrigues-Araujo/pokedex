@@ -9,7 +9,7 @@ const HomePage = () => {
       <div className="greeting">
         <h3>Welcome!</h3>
         <p>Click below to check out all your favorite Pokemons!</p>
-        <a href="/pokedex">Explore</a>
+        <a href="#/pokedex-page">Explore</a>
       </div>
 
     </div>

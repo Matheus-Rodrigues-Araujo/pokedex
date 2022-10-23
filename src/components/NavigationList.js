@@ -20,7 +20,7 @@ export default function NavigationList({routes}) {
     <nav className="navigation">
 
     
-    <a className="logo" href="/">Pokedex App</a>
+    <a className="logo" href="pokedex/">Pokedex App</a>
   
     <div className="toggle-icon"
     onClick={() => toggle ? setToggle(false) : setToggle(true)}
@@ -47,10 +47,6 @@ export default function NavigationList({routes}) {
       routes={routes}/>
 
     }
-
-    {/* {
-      width <= '680' ? <NewSideBar routes={routes}/> : null
-    } */}
     </nav>
   )
 }
