@@ -22,6 +22,7 @@ header {
   display: flex;
   height: 5vh;
   align-items: center;
+  z-index: 0;
 }
 
 .input-div input {

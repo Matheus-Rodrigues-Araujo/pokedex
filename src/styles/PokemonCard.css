@@ -49,8 +49,8 @@
 @media screen and (max-width: 708px) {
   .pokemon-card {
 
-    width: 200px;
-    height: 200px;
+    width: 205px;
+    height: 215px;
     /* transition: .4s ease-in-out; */
   }
 
