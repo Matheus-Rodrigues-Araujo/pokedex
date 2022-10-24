@@ -41,11 +41,20 @@
 .load-content:hover {
   background-color: var(--green);
 }
- 
+
 @media screen and (max-width: 710px) {
   .pokemon-list {
-    
     gap: 0em;
-   
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pokemon-list {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    /* gap: 1.5em; */
+    justify-content: center;
+    /* margin: 0 3em; */
   }
 }
