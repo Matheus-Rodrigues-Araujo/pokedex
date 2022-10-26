@@ -4,7 +4,7 @@ const HomePage = () => {
       <img
         src={process.env.PUBLIC_URL + '/images/pokeball_wallpaper.jpg'}
         alt="Pokemon Wallpaper"
-        width="450px"/>
+      />
       
       <div className="greeting">
         <h3>Welcome!</h3>

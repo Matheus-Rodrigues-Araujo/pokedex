@@ -1,11 +1,13 @@
 .home-page {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   padding: 1em;
+  /* height: 100vh; */
 }
 
 .home-page img {
-  flex: 1;
+  width: 400px;
 }
 
 .greeting {
@@ -15,7 +17,6 @@
   flex-flow: column wrap;
   text-align: center;
   align-items: center;
-  /* margin-left: 5em; */
   gap: 0.7em;
 }
 
@@ -40,4 +41,22 @@
 
 .greeting a:hover {
   background-color: var(--green);
+}
+
+@media screen and (max-width: 750px) {
+  
+  .home-page{
+    align-items: center;
+  }
+  .home-page img{
+    width: 300px;
+  }
+
+  .greeting h3{
+    font-size: 3rem
+  }
+
+  .greeting p{
+    font-size: 1rem;
+  }
 }

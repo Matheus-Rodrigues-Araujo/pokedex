@@ -146,7 +146,7 @@ function App() {
   return (
     <HashRouter>
       <ThemeContext.Provider value={pokemonThemes}>
-        <div className="main">
+        {/* <div className="main> */}
           <NavigationList routes={links} />
           
           <Routes>
@@ -160,7 +160,7 @@ function App() {
           </Routes>
 
           <Footer />
-        </div>
+        {/* </div> */}
       </ThemeContext.Provider>
     </HashRouter>
   )
