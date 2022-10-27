@@ -75,7 +75,6 @@ export function PokemonPage() {
             <img
               src={pokemon.sprites}
               alt={`Official artwork of ${pokemon.name}`}
-              width="380"
             />
           </div>
 

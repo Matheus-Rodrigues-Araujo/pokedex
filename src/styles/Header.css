@@ -4,6 +4,7 @@ header {
   font-weight: 700;
   text-align: center;
   display: flex;
+  /* height: 12vh; */
   align-items: center;
   flex-flow: column wrap;
   padding: 1.5em;

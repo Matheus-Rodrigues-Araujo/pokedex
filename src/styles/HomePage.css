@@ -2,17 +2,22 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 1em;
+  /* padding: 1em; */
+  margin: 3em 0;
+  /* height: 100%; */
   /* height: 100vh; */
 }
 
 .home-page img {
-  width: 400px;
+  /* max-width: 50%; */
+  /* height: auto; */
+  width: 50%;
+  height: auto;
 }
 
 .greeting {
   margin-top: 2em;
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-flow: column wrap;
   text-align: center;
@@ -21,7 +26,7 @@
 }
 
 .greeting h3 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .greeting p {
@@ -49,7 +54,8 @@
     align-items: center;
   }
   .home-page img{
-    width: 300px;
+    width: 100%;
+    height: auto;
   }
 
   .greeting h3{

@@ -6,7 +6,6 @@ import Header from './components/Header'
 import NavigationList from './components/NavigationList'
 import Footer from './components/Footer'
 
-
 import RenderPokemons from './components/RenderPokemons'
 
 import axios from 'axios'
@@ -54,8 +53,6 @@ const pokemonThemes = {
 
   steel: 'rgba(223, 217, 217, 0.699)'
 }
-
-
 
 function App() {
   const [items, setItems] = useState([])
@@ -147,21 +144,32 @@ function App() {
     <HashRouter>
       <ThemeContext.Provider value={pokemonThemes}>
         {/* <div className="main> */}
-          <NavigationList routes={links} />
-          
-          <Routes>
-            <Route path='/' element={<HomePage />}> </Route>
-            <Route path="/pokemons" element={<>
-              <Header handleInput={pokemonFilter} />
-              <PokedexPage />
-             </>} />
-            <Route path="/pokemons/:id" element={<PokemonPage />}></Route>
-            <Route path="*" element={<h1>Page doesn't exist yet, comeback later!</h1>} />
-          </Routes>
+        <NavigationList routes={links} />
 
-          <Footer />
+        <Routes>
+          <Route path="/" element={<HomePage />}>
+            {' '}
+          </Route>
+          <Route
+            path="/pokemons"
+            element={
+              <>
+                <Header handleInput={pokemonFilter} />
+                <PokedexPage />
+              </>
+            }
+          />
+          <Route path="/pokemons/:id" element={<PokemonPage />}></Route>
+          <Route
+            path="*"
+            element={<h1>Page doesn't exist yet, comeback later!</h1>}
+          />
+        </Routes>
+
+        {/* <Footer /> */}
         {/* </div> */}
       </ThemeContext.Provider>
+      <Footer />
     </HashRouter>
   )
 }
