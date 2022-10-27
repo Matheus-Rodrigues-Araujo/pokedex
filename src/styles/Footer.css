@@ -4,7 +4,7 @@ footer {
   display: flex;
   text-align: center;
   /* height: 12vh; */
-  padding: 1em;
+  padding: 1.5em;
   justify-content: center;
   align-items: center;
 }

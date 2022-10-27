@@ -165,9 +165,6 @@ function App() {
             element={<h1>Page doesn't exist yet, comeback later!</h1>}
           />
         </Routes>
-
-        {/* <Footer /> */}
-        {/* </div> */}
       </ThemeContext.Provider>
       <Footer />
     </HashRouter>
