@@ -142,6 +142,7 @@ h1 {
   }
 
   .bio {
+    flex: 0;
     margin-bottom: 1em;
   }
 
