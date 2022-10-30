@@ -47,7 +47,13 @@ export function PokemonPage() {
         weight: res.data.weight,
         // abilities: res.data.abilities[0].ability.name,
         abilities: abilitiesList.map(a => <li>{a}</li>),
-        stats: statsList,
+        stats: statsList.map(a => 
+        <li className='stat-item'>
+          <h4>{a.stat}</h4>
+          <h4>{a.base}%</h4>
+          <div style={{width: a.base+'%', 'height': '8px', backgroundColor: '#ffc107'}} ></div>
+        </li>
+        ),
         height: res.data.height,
         types: typesList.map(a => (
           <li
@@ -94,6 +100,11 @@ export function PokemonPage() {
             </div>
           </div>
 
+        </div>
+
+        <div className='stats'>
+          <h3>Stats</h3>
+          {pokemon.stats}
         </div>
       </div>
     )

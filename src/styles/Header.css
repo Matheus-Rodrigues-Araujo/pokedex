@@ -34,7 +34,8 @@ header {
   height: 100%;
   border: none;
   border-radius: 1em 2em 2em 1em;
-  padding-left: 8px;
+  /* padding-left: 8px; */
+  padding: .2em 5px;
 }
 
 .input-div .submit-btn {

@@ -105,23 +105,18 @@ function App() {
 
   const pokemonFilter = e => {
     setLoading(false)
-    // console.log(e)
     var filteredPokemons = []
-    // Update current value when onChange is triggered
-    if (e.length >= 1) {
+    
+    if (e.length) {
       for (var i in items) {
-        // filters all the pokemons that had the input value letters
         if (items[i].data.name.includes(e)) {
           filteredPokemons.push(items[i])
         }
       }
-      // Updates items with an array of filtered pokemon(s)
-      // console.log(filteredPokemons)
+      
       setItems(filteredPokemons)
-      // Updadtes the state of the loading
       setLoading(true)
     } else {
-      // Calls the function to reload all the data
       getPokemon()
     }
   }
