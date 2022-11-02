@@ -106,14 +106,14 @@ function App() {
   const pokemonFilter = e => {
     setLoading(false)
     var filteredPokemons = []
-    
+
     if (e.length) {
       for (var i in items) {
         if (items[i].data.name.includes(e)) {
           filteredPokemons.push(items[i])
         }
       }
-      
+
       setItems(filteredPokemons)
       setLoading(true)
     } else {
