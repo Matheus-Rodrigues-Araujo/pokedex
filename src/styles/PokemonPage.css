@@ -1,58 +1,56 @@
-.data-container {
+.data-container { 
   /* display: flex; */
   flex-flow: column wrap;
   align-items: center;
-  padding: 1em 10em;
+  padding: 1em;
   gap: 1em;
-  /* background-color: rgb(255, 0, 0); */
+  
 }
+
 
 h1 {
   text-align: center;
   font-size: 2rem;
-  border: 12px outset red;
-  background-color: rgb(24, 22, 29);
-  /* background-color: rgb(11, 113, 113); */
-  color: white;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  /* color: white; */
 }
 
-.profile {
-  padding: 1em;
-  display: flex;
-  flex-flow: row wrap;
-  gap: 0.8em;
-  border: 12px outset red;
-  /* background-color: darkslategray; */
-  background-color: rgb(24, 22, 29);
+.profile{
+  border-radius: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
 
 .bio {
   display: flex;
-  align-items: center;
+  /* flex-flow: column wrap; */
+  /* align-items: center; */
   justify-content: center;
-  background-color: rgb(0, 176, 229);
+  align-items: center;
+  background-color: rgb(41, 181, 181);
   border-radius: 0.3em;
-  flex: 1 1;
+  border-radius: 1em;
   transition: 0.4s;
 }
 
-.bio img {
+.bio img{
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   max-width: 100%;
   height: auto;
 }
 
 .bio:hover {
-  background-color: rgb(12, 239, 205);
+  background-color: rgb(28, 33, 36);
 }
 
 .about {
   height: 100%;
+  width: 100%;
   flex: 1;
-  gap: 1.8em;
+  justify-content: space-between;
   display: flex;
   flex-flow: column wrap;
   text-align: center;
@@ -62,25 +60,29 @@ h1 {
 
 .about h3 {
   font-size: 1.8rem;
-  color: white;
 }
 
 .types {
   color: black;
 }
 .types li {
+  /* width: 50%; */
   list-style: none;
   background-color: rgb(207, 198, 198);
   border-radius: 0.3em;
   margin-bottom: 0.3em;
 }
 
-.details {
+.details p{
   background-color: rgb(1, 113, 165);
   padding: 1em;
+  /* width: 50%; */
+  margin-bottom: 0.3em;
   color: white;
   border-radius: 0.3em;
 }
+
+
 
 .abilities-container {
   display: block;
@@ -88,7 +90,6 @@ h1 {
   border: rgb(219, 9, 9) 1em solid;
   border-radius: 1em;
   list-style: none;
-  /* width: 40%; */
   height: 30%;
   flex: 1;
   text-align: center;
@@ -112,8 +113,8 @@ h1 {
   padding: 1em;
   color: white;
   background-color: rgb(24, 22, 29);
-  margin: 0 1em;
-  border: 12px outset red;
+  margin: 1em 0;
+  border-radius: 1em;
 }
 
 .stats h3 {
@@ -133,21 +134,20 @@ h1 {
   border-right: 1px solid white;
 }
 
-@media screen and (max-width: 660px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  .profile {
-    display: block;
-  }
-
-  .bio {
-    flex: 0;
-    margin-bottom: 1em;
+@media screen and (max-width: 680px) {
+  .profile{
+    border-radius: 1em;
+    padding: 5px;
+    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .data-container {
-    padding: 1em 1.5em;
-    font-size: 0.9rem;
+  .about{
+    width: 100%;
+  }
+
+  .stat-item{
+    font-size: .8rem;
   }
 }
